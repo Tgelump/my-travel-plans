@@ -1,0 +1,10 @@
+name: "Call reusable workflow"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call-greeting:
+    uses: .github/workflows/Reusable Workflows.yml@1e8130427c89fd041ce5cf0ea8506c910c92b3f8
+    with:
+      actor: "User"
